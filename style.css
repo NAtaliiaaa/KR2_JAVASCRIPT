@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: rgba(175, 172, 172, 0.61);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_container {
+    display: flex;
+}
+
+.text_container {
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.text_wrap {
+    background-color: rgba(211, 217, 231, 0.445);
+    margin: 0 auto;
+    margin-top: 10px;
+    min-height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 60px;
+}
+
+.btn1 {
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+
+.bold {
+    border-radius: 5px 0 0 5px;
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.strikeout {
+    text-decoration: line-through;
+    border-radius: 0 5px 5px 0;
+}
+
+.left {
+    margin-left: 25px;
+    border-radius: 5px 0 0 5px;
+}
+
+.right {
+    border-radius: 0 5px 5px 0;
+    margin-right: 25px;
+}
+
+#fontFamilyContainer,
+#fontSizeContainer {
+    min-height: 150px;
+    min-width: 120px;
+    padding: 15px;
+    margin: 5px;
+    background-color: rgba(253, 253, 253, 0.747);
+    border-radius: 10px;
+    border: 1px solid rgba(187, 187, 187, 0.466);
+    position: fixed;
+    top: 70px;
+    display: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn1:hover {
+    /* background-color: rgba(177, 177, 177, 0.815); */
+    border: 2px solid rgba(155, 152, 152, 0.644);
+    border-radius: 5px;
+}
+
+.header_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_container {
+    margin: 10px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    background-color: #F8FAF9;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input:checked~.checkmark {
+    background-color: rgba(199, 197, 197, 0.692);
+}
